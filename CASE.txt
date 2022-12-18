@@ -1,0 +1,10 @@
+FROM: https://mode.com/sql-tutorial/sql-case/
+
+Practice Problem
+Write a query that includes a column that is flagged "yes" when a player is from California, and sort the results with those players first.
+
+ANSWER:
+SELECT player_name, state,  CASE WHEN state = 'CA' THEN 'yesss'
+END AS FROMWwHERE
+FROM benn.college_football_players
+ORDER BY player_name
